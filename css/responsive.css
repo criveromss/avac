@@ -1,0 +1,352 @@
+@media (min-width:992px) and (max-width:1199px) {
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    .h-300 {
+        height: 188px;
+    }
+    .clubsec{
+        transform: rotate(0deg);
+    }
+    .overflowx, .servarea{
+        overflow-x: hidden;
+    }
+    .hdr{
+        position: relative;
+    }
+    .gap-lg-0{
+        gap:0px!important;
+    }
+    .navbar-brand{
+        width: 150px;
+        height: auto;
+    }
+    .navbar button{
+        padding: 0 8px;
+        height: 35px;
+    }
+    .herosection img{
+        height: 400px;
+        object-fit: cover;
+    }
+    .herosection span{
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 10px;
+    }
+    .herosection h1, .models h2, .servarea h3, .clubsec h3, .slidersec h3{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .herosection p, .servarea p, .clubsec p, .slidersec p{
+        font-size: 14px;
+        line-height: normal;
+        width: 100%;
+    }
+    .herosection p br{
+        display: contents;
+    }
+    .vihcale{
+        margin-top:0;
+        width: 100%;
+    }
+    .py-10 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .models h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .models h4, .clubsec h4, .slidersec h4{
+        font-size: 18px;
+    }
+    .innersec h5{
+        font-size: 22px;
+    }
+    .forboxes h3{
+        font-size: 18px;
+    }
+    .h-630{
+        height: 400px;
+    }
+    .servnew{
+        padding: 70px 0 55px;
+    }
+    .slidersec{
+        padding-bottom: 0px;
+    }
+    .bgoverlay img{
+        width: 35px;
+    }
+    .servnew::before {
+        top: -10px;
+        left: 0;
+        background: url(../images/arrow.png) no-repeat top left -20px;
+        width: 100%;
+        height: 85px;
+        background-size: contain;
+    }
+    .servnew::after {
+        bottom: -20px;
+        right: 0;
+        background: url(../images/arrow1.png) no-repeat bottom right -20px;
+        width: 100%;
+        height: 60px;
+        background-size: contain;
+    }
+    .servnew .heading{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .clubsec{
+        padding: 30px 0;
+    }
+    .clubsec hr{
+        margin:30px 0 10px;
+    }
+    .clubsec img{
+        height: 250px;
+        margin-top: 50px;
+    }
+    .clubsec h5{
+        font-size: 24px;
+    }
+    .clubsec::before, .clubsec::after{
+        width: 38px;
+        height: 38px;
+    }
+    .logosec {
+        padding: 40px 0 80px;
+    }
+    .logosec img {
+        height: 60px;
+        width: 80px;
+    }
+    .navbar-collapse{
+        width: 100%;
+        background: rgb(255, 255, 255);
+        padding: 20px;
+    }
+    .vihcale input{
+        width: 100%;
+    }
+    footer .logofooter{
+        width: 30%;
+    }
+    footer ul{
+        padding: 0;
+        margin-top: 30px;
+    }
+    .footerbtm p{
+        font-size: 13px;
+    }
+    .clubsec{
+        transform: rotate(0deg);
+    }
+    .overflowx{
+        overflow-x: hidden;
+    }
+    .heroicon{
+        bottom: 20px;
+        right: 20px;
+    }
+    .flexcust{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start!important;
+        gap:10px!important;
+        margin-top: 20px;
+    }
+    .navbar-light .navbar-toggler {
+        box-shadow: 0px 0px 0px 0px #000;
+    }
+    .heroDiv h1{
+        font-size: 32px;
+        line-height: normal;
+    }
+    .heroDiv h4{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .heroDiv{
+        height: 300px;
+    }
+    .pb-10{
+        padding-bottom: 50px;
+    }
+    .heroDiv{
+        background-size:100% 50%;
+    }
+    
+}
+@media only screen and (max-width:767px) {
+    .hdr{
+        position: relative;
+    }
+    .navbar-brand{
+        width: 150px;
+        height: auto;
+    }
+    .navbar button{
+        padding: 0 8px;
+        height: 35px;
+    }
+    .herosection img{
+        height: 400px;
+        object-fit: cover;
+    }
+    .herosection span{
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 10px;
+    }
+    .herosection h1, .models h2, .servarea h3, .clubsec h3, .slidersec h3{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .herosection p, .servarea p, .clubsec p, .slidersec p{
+        font-size: 14px;
+        line-height: normal;
+        width: 100%;
+    }
+    .herosection p br{
+        display: contents;
+    }
+    .vihcale{
+        margin-top:0;
+        width: 100%;
+    }
+    .py-10 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .models h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .models h4, .clubsec h4, .slidersec h4{
+        font-size: 18px;
+    }
+    .innersec h5{
+        font-size: 22px;
+    }
+    .forboxes h3{
+        font-size: 18px;
+    }
+    .h-630{
+        height: 400px;
+    }
+    .servnew{
+        padding: 80px 0 55px;
+    }
+    .servnew::before {
+        top: -10px;
+        left: 0;
+        background: url(../images/arrow.png) no-repeat top left -20px;
+        width: 100%;
+        height: 85px;
+        background-size: contain;
+    }
+    .servnew::after {
+        bottom: -20px;
+        right: 0;
+        background: url(../images/arrow1.png) no-repeat bottom right -20px;
+        width: 100%;
+        height: 60px;
+        background-size: contain;
+    }
+    .servnew .heading{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .slidersec{
+        padding-bottom: 0px;
+    }
+    .clubsec{
+        padding: 30px 0;
+    }
+    .clubsec hr{
+        margin:30px 0 10px;
+    }
+    .clubsec img{
+        height: 250px;
+        margin-top: 50px;
+    }
+    .clubsec h5{
+        font-size: 24px;
+    }
+    .clubsec::before, .clubsec::after{
+        width: 38px;
+        height: 38px;
+    }
+    .logosec {
+        padding: 40px 0 80px;
+    }
+    .logosec img {
+        height: 60px;
+        width: 80px;
+    }
+    .navbar-collapse{
+        width: 100%;
+        background: rgb(255, 255, 255);
+        padding: 20px;
+    }
+    .vihcale input{
+        width: 100%;
+    }
+    footer .logofooter{
+        width: 50%;
+    }
+    footer ul{
+        padding: 0;
+        margin-top: 30px;
+    }
+    .footerbtm p{
+        font-size: 13px;
+    }
+    .clubsec{
+        transform: rotate(0deg);
+    }
+    .overflowx{
+        overflow-x: hidden;
+    }
+    .heroicon{
+        bottom: 20px;
+        right: 20px;
+    }
+    .flexcust{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start!important;
+        gap:10px!important;
+        margin-top: 20px;
+    }
+    .navbar-light .navbar-toggler {
+        box-shadow: 0px 0px 0px 0px #000;
+    }
+    .heroDiv{
+        background-size:100% 50%;
+    }
+    .heroDiv h1{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .heroDiv h4{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .heroDiv{
+        height: 300px;
+    }
+    .newpage{
+        flex-direction: column;
+    }
+    .newpage .vihcale{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .pb-10{
+        padding-bottom: 50px;
+    }
+}
