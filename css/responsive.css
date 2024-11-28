@@ -1,5 +1,15 @@
 @media (min-width:992px) and (max-width:1199px) {
-    
+
+    .toparrow{
+        width: 550px;
+        top:-130px;
+    }
+    .bttomarrow {
+        right: -134px;
+        width: 550px;
+        bottom: -75px;
+    }
+
 }
 @media (min-width:768px) and (max-width:991px) {
     .h-300 {
@@ -178,9 +188,43 @@
     .heroDiv{
         background-size:100% 50%;
     }
-    
+    .toparrow{
+        width: 450px;
+        top:-130px;
+    }
+    .bttomarrow {
+        right: -134px;
+        width: 450px;
+        bottom: -75px;
+    }
+
 }
 @media only screen and (max-width:767px) {
+
+
+    .pe-4 {
+        padding-left: 2.5rem;
+    }
+    .d-flex.flexcust.w-350.gap-4.align-items-center.justify-content-end {
+        padding-left: 16px;
+    }
+
+    ul.navbar-nav.w-350 {
+        padding: 0px;
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+
+    }
+    .img-logo {
+        height: 57px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%); /* Compense la moitié de la largeur de l'élément */
+
+    }
+
     .hdr{
         position: relative;
     }
@@ -195,6 +239,15 @@
     .herosection img{
         height: 400px;
         object-fit: cover;
+    }
+    .toparrow{
+        width: 300px;
+        top:-90px;
+    }
+    .bttomarrow {
+        right: 1px;
+        width: 193px;
+        bottom: -75px;
     }
     .herosection span{
         font-size: 16px;
@@ -261,7 +314,8 @@
         line-height: 24px;
     }
     .slidersec{
-        padding-bottom: 0px;
+        padding-bottom: 40px;
+        margin-top: 70px;;
     }
     .clubsec{
         padding: 30px 0;
@@ -296,7 +350,8 @@
         width: 100%;
     }
     footer .logofooter{
-        width: 50%;
+        width: 100%;
+        margin-top: 40px;
     }
     footer ul{
         padding: 0;

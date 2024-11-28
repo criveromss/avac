@@ -15,43 +15,46 @@
 </head>
 
 <body>
-  <header class="hdr w-100 ">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand d-block d-lg-none" href="#"><img class="w-100" src="images/logo.svg" alt="" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo03">
-          <ul class="navbar-nav w-350">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">La collection</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nos services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">La communauté</a>
-            </li>
-          </ul>
-          <a class="navbar-brand mx-0 pt-3 d-none d-lg-block" href="#"><img class="mt-5" src="images/logo.svg"
-              alt="" /></a>
-          <div class="d-flex flexcust w-350 gap-4 align-items-center justify-content-end">
-            <button>Contact</button>
-            <button class="d-flex justify-content-center align-items-center gap-2"><img src="images/user.svg" alt="" />
-              Connexion</button>
-            <a href=""><img src="images/flag.svg" alt="" /></a>
-          </div>
+<header class="hdr w-100 bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-block d-lg-none" href="index.html">
+        <img class="img-logo" src="images/logo.svg" alt="" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo03">
+        <ul class="navbar-nav w-350">
+          <li class="nav-item">
+            <a class="nav-link active" href="collection.html">La collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">La communauté</a>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-0 pt-3 d-none d-lg-block" href="index.html"><img class="mt-5" src="images/logo.svg"
+                                                                                   alt="" /></a>
+        <div class="d-flex flexcust w-350 gap-4 align-items-center justify-content-end">
+          <button>Contact</button>
+          <button class="d-flex justify-content-center align-items-center gap-2"><img src="images/user.svg" alt="" />
+            Connexion</button>
+          <a href=""><img src="images/flag.svg" alt="" /></a>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
   <section>
     <div class="heroDiv d-flex justify-content-center align-items-center flex-column text-center">
       <div class="container">
         <h4>La collection</h4>
-        <h1>Tous nos véhicules disponibles à l’achat ou la location</h1>
+        <h1>Tous nos véhicules disponibles à <br> l’achat ou la location</h1>
       </div>
     </div>
   </section>
@@ -434,36 +437,37 @@
             <h6>+</h6>
             <h4>Pas encore de coup de coeur ?</h4>
             <p>Dites-nous quel modèle vous recherchez, nous le trouverons pour vous.</p>
-            <a href="#">Voir toute la collection</a>
+            <a class="a-outline" href="#">Recherche personnalisée</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="px-3 daksec overflowx pb-10 bg-white">
+  <section class="px-3 daksec overflowx">
     <div class="clubsec">
       <div class="container">
-        <div class="row">
+        <div class="row norotate">
           <div class="col-md-6 pe-4">
             <h4>La communauté</h4>
             <h3>Devenez membre du club</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus ac est et congue. Aliquam in
-              tincidunt dolor. Ut tellus eros, mattis sed aliquet quis, convallis eu est.</p>
+            <p>Rejoignez une communauté exclusive où chaque voiture légendaire raconte une histoire et chaque trajet devient une émotion inoubliable. Amicalement Vôtre, c’est l’authenticité et le partage au coeur de votre passion.</p>
             <a href="#">Découvrir le club</a>
-            <hr />
-            <div class="d-flex justify-content-between">
-              <div>
-                <h5>420</h5>
-                <h6>chiffre clé</h6>
-              </div>
-              <div>
-                <h5>12</h5>
-                <h6>chiffre clé</h6>
-              </div>
-              <div>
-                <h5>100%</h5>
-                <h6>chiffre clé</h6>
+            <div class="pe-5">
+              <hr />
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h5>420</h5>
+                  <h6>chiffre clé</h6>
+                </div>
+                <div>
+                  <h5>12</h5>
+                  <h6>chiffre clé</h6>
+                </div>
+                <div>
+                  <h5>100%</h5>
+                  <h6>chiffre clé</h6>
+                </div>
               </div>
             </div>
           </div>
@@ -476,68 +480,75 @@
   </section>
 
 
-  <footer>
-    <div class="row mx-0 mb-5 align-items-center w-100">
-      <div class="col-lg-5 ps-0 pe-0 pe-lg-3">
-        <hr />
-      </div>
-      <div class="col-lg-2 text-center">
-        <img src="images/logo.svg" class="logofooter" alt="" />
-      </div>
-      <div class="col-lg-5 pe-0 ps-0 ps-lg-3">
-        <hr />
-      </div>
-    </div>
-    <div class="container mb-4 mb-md-5">
-      <div class="row">
-        <div class="col-lg-4">
-          <p>AMICALEMENT VOTRE</br> AUTOMOBILE CLUB - AVAC</p>
-          <p>37 rue Albert Joly</br>
-            78400 Chatou</br>
-            02 32 XX XX XX</p>
-          <ul class="d-flex gap-3 p-0 m-0">
-            <li><a href="#"><img src="images/insta.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/linked.png" alt="" /></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <ul>
-            <li>
-              <a href="">La collection</a>
-            </li>
-            <li>
-              <a href="">Nos services</a>
-            </li>
-            <li>
-              <a href="">La communauté</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Connexion</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-5 formsec">
-          <p class="mb-1">Profitez de nos expériences de conduite en avant-première</p>
-          <div class="w-100 d-flex justify-content-between gap-3 mb-2">
-            <input placeholder="Email" type="email" />
-            <button>S’inscrire</button>
-          </div>
-          <span>En cliquant sur s’inscrire, vous acceptez d’être recontacté par Amicalement Vôtre à des fins
-            commerciales.</span>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+  <div class="mt-xxl-5">
+
+  </div>
+
+
+<footer>
+
+  <div class="row mx-0 mb-5 align-items-center w-100">
+    <div class="col-4 col-lg-3 ps-0 pe-0 pe-lg-3">
       <hr />
-      <div class="py-2 footerbtm text-center">
-        <p>Mentions légales • Politique de confidentialité • © 2024 AMICALEMENT VOTRE AUTOMOBILE CLUB - AVAC SAS Tous
-          droits réservés</p>
+    </div>
+    <div class="col-4 col-lg-6 text-center">
+      <img src="images/logo.svg" class="logofooter" alt="" />
+    </div>
+    <div class="col-4 col-lg-3 pe-0 ps-0 ps-lg-3">
+      <hr />
+    </div>
+  </div>
+
+  <div class="container mb-4 mb-md-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <p>AMICALEMENT VOTRE</br> AUTOMOBILE CLUB - AVAC</p>
+        <p>37 rue Albert Joly</br>
+          78400 Chatou</br>
+          02 32 XX XX XX</p>
+        <ul class="d-flex gap-3 p-0 m-0">
+          <li><a href="#"><img src="images/insta.svg" alt="" /></a></li>
+          <li><a href="#"><img src="images/linked.svg" alt="" /></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li>
+            <a href="collection.html">La collection</a>
+          </li>
+          <li>
+            <a href="">Nos services</a>
+          </li>
+          <li>
+            <a href="">La communauté</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">Connexion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-5 formsec">
+        <p class="mb-1">Profitez de nos expériences de conduite en avant-première</p>
+        <div class="w-100 d-flex justify-content-between gap-3 mb-2">
+          <input placeholder="Email" type="email" />
+          <button>S’inscrire</button>
+        </div>
+        <span>En cliquant sur s’inscrire, vous acceptez d’être recontacté par Amicalement Vôtre à des fins
+            commerciales.</span>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="container">
+    <hr />
+    <div class="py-2 footerbtm text-center">
+      <p>Mentions légales • Politique de confidentialité • © 2024 AMICALEMENT VOTRE AUTOMOBILE CLUB - AVAC SAS Tous
+        droits réservés</p>
+    </div>
+  </div>
+</footer>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -583,7 +594,7 @@
   <script>
     //sticky Header
      $(window).scroll(function() {
-      if ($(this).scrollTop() > 1){  
+      if ($(this).scrollTop() > 1){
       $('header').addClass("sticky");
       }
       else{
@@ -591,7 +602,7 @@
       }
      });
     </script>
-    
+
 </body>
 
 </html>
