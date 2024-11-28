@@ -506,6 +506,7 @@ li.nav-item a{
 }
 .videoslider video{
     border-radius: 20px;
+    height: 550px;
 }
 footer ul{
     list-style: none;
