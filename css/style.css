@@ -285,29 +285,58 @@ li.nav-item a{
     border-radius: 20px;
     object-fit: cover;
 }
-.servarea{
-    background: #FBF6EF url("../images/bginer.png");
+
+
+
+.servarea {
+    background: #FBF6EF url(../images/bginer.png);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    position: relative;
+    position: relative; /* Important pour les pseudo-éléments positionnés */
+    z-index: 0;
+    overflow: visible; /* Permet aux pseudo-éléments de dépasser */
+    min-height: 600px; /* Assurez-vous que la section est assez grande */
+    margin-top: 70px;
 }
-.servarea::after{
-    content: "";
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #fff;
-    display: inline-block;
+
+/* Arc visible en bas */
+.servarea::before {
+    content: '';
     position: absolute;
+    bottom: -50px; /* Permet à l’arc de dépasser en dessous */
+    left: 0;
+    width: 100%;
+    height: 150px; /* Hauteur de l’arc */
+    background: #FBF6EF;
+    border-radius: 100% 100% 0 0; /* Arc parfait */
+    z-index: -1; /* Place l'arc sous le contenu principal */
+    top: -71px;
+}
+
+
+
+
+/* Logo centré et isolé */
+.logo-container {
+    position: absolute;
+    bottom: 120px; /* Ajuste la position verticale juste au-dessus de l'arc */
+    left: 50%;
+    top: -123px;
+    transform: translateX(-50%);
+    width: 100px; /* Taille du logo */
+    height: 100px;
+    background: #fff;
+    border-radius: 50%; /* Cercle parfait */
     background-image: url("../images/icon.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    top: -40px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    background-position: center;
+    background-size: 60%; /* Ajustez la taille de l’icône */
+    z-index: 2; /* Place le logo au-dessus de tout */
 }
+
+
+
 .servarea h3{
     font-size: 44px;
     line-height: 50px;
@@ -663,4 +692,143 @@ footer hr{
 /* Ajout d'une transition pour un effet fluide */
 .forboxes .bgoverlay img {
     transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #db5c1c !important;
+}
+a.nav-link.active {
+    color: #db5c1c !important;
+}
+
+
+.herosection .club:hover {
+    transition: all 0.4s ease-in-out 0s;
+    color: #1E1E21;
+    background-color: #F4E8D4;
+}
+
+.noborder{
+    border: none !important;
+}
+
+input[type="search"]:focus {
+    outline: none; /* Supprime l'effet de bordure par défaut */
+    border: 1px solid #1E1E21; /* Applique une bordure personnalisée */
+}
+
+
+
+
+
+.vihcale {
+    margin: 20px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container svg {
+    position: absolute;
+    left: 10px; /* Espace entre le bord gauche et l'icône */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none; /* Ne bloque pas l'interaction avec l'input */
+}
+
+.input-container input {
+    padding-left: 40px; /* Espace pour laisser place au SVG */
+}
+
+
+
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.forboxes .position-relative {
+    position: relative;
+    overflow: hidden; /* Contient l'overlay dans le cadre */
+}
+
+.forboxes .position-relative:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(30, 30, 33, 0) 0%, rgba(30, 30, 33, 0.8) 44%, rgba(30, 30, 33, 1) 100%);
+    z-index: 1; /* Place l'overlay au-dessus de l'image */
+    transition: background 0.4s ease;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Style de la section */
+.logosec {
+    background: #f9f9f9;
+    padding: 20px 0;
+    overflow: hidden; /* Cache les débordements */
+    position: relative;
+}
+
+/* Conteneur principal */
+.logo-slider {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden; /* Cache le contenu qui sort des limites */
+    position: relative;
+    width: 100%;
+    height: 100px; /* Ajustez selon la taille des logos */
+}
+
+/* Piste de logos */
+.logo-track {
+    display: flex;
+    gap: 30px; /* Espacement entre les images */
+    animation: scroll 20s linear infinite; /* Animation continue */
+}
+
+/* Style des logos */
+.logo-track img {
+    height: 80px; /* Taille des images */
+    flex-shrink: 0; /* Empêche les logos de rétrécir */
+}
+
+/* Animation keyframes */
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Départ à gauche */
+    }
+    to {
+        transform: translateX(-50%); /* Fin au milieu pour la boucle */
+    }
 }

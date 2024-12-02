@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo03">
           <ul class="navbar-nav w-350">
             <li class="nav-item">
-              <a class="nav-link active" href="collection.html">La collection</a>
+              <a class="nav-link" href="collection.html">La collection</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Nos services</a>
@@ -60,12 +60,12 @@
         <p>Plongez dans l’univers des voitures de légende et accédez à une collection <br> exclusive de modèles iconiques, un patrimoine rare et authentique.</p>
         <div class="d-flex justify-content-center gap-md-4 gap-2 flex-column flex-md-row">
           <a href="collection.html" class="fill">Voir la collection</a>
-          <a href="">Découvrir le club</a>
+          <a class="club" href="">Découvrir le club</a>
         </div>
       </div>
       <div class="position-absolute heroicon d-flex flex-column gap-2">
-        <a href="#"><img src="images/insta.svg" alt="" /></a>
-        <a href="#"><img src="images/linked.svg" alt="" /></a>
+        <a class="noborder" href="#"><img src="images/insta.svg" alt="" /></a>
+        <a class="noborder" href="#"><img src="images/linked.svg" alt="" /></a>
       </div>
     </div>
   </section>
@@ -73,7 +73,12 @@
     <div class="w-100">
       <div class="vihcale">
         <h3>Rechercher un véhicule</h3>
-        <input type="search" placeholder="Porsche 911, Jaguar type E…" />
+        <div class="input-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18.707" height="18.708" viewBox="0 0 18.707 18.708">
+            <path id="Tracé_1783" data-name="Tracé 1783" d="M10,18a7.951,7.951,0,0,0,4.9-1.687l4.4,4.395,1.414-1.414-4.4-4.4A7.99,7.99,0,1,0,10,18ZM10,4a6,6,0,1,1-6,6A6.006,6.006,0,0,1,10,4Z" transform="translate(-2 -2)" fill="#1e1e21"/>
+          </svg>
+          <input type="search" placeholder="Porsche 911, Jaguar type E…" />
+        </div>
       </div>
     </div>
   </section>
@@ -82,7 +87,7 @@
       <h3>Achat & location</h3>
       <h2>Nos derniers modèles</h2>
       <div class="row gap-3 gap-md-0">
-        <div class="col-lg-4 col-md-6 position-relative">
+        <div class="col-lg-4 col-md-6 position-relative" data-aos="fade-up">
           <div class="tagdiv position-absolute start-0">Nouveauté</div>
           <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -108,7 +113,7 @@
           <h4>Nom du modèle</h4>
           <p>1974 • 190 chevaux • 145000km</p>
         </div>
-        <div class="col-lg-4 col-md-6 position-relative">
+        <div class="col-lg-4 col-md-6 position-relative" data-aos="fade-up">
           <div class="tagdiv position-absolute start-0">Nouveauté</div>
           <div id="carouselExampleDark1" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -134,7 +139,7 @@
           <h4>Nom du modèle</h4>
           <p>1974 • 190 chevaux • 145000km</p>
         </div>
-        <div class="col-lg-4 col-md-6 position-relative">
+        <div class="col-lg-4 col-md-6 position-relative" data-aos="fade-up">
           <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active"
@@ -159,7 +164,7 @@
           <h4>Nom du modèle</h4>
           <p>1974 • 190 chevaux • 145000km</p>
         </div>
-        <div class="col-lg-4 col-md-6 position-relative">
+        <div class="col-lg-4 col-md-6 position-relative" data-aos="fade-up">
           <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="0" class="active"
@@ -184,7 +189,7 @@
           <h4>Nom du modèle</h4>
           <p>1974 • 190 chevaux • 145000km</p>
         </div>
-        <div class="col-lg-4 col-md-6 position-relative">
+        <div class="col-lg-4 col-md-6 position-relative" data-aos="fade-up">
           <div id="carouselExampleDark4" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark4" data-bs-slide-to="0" class="active"
@@ -223,54 +228,63 @@
     <div class="container pb-5">
       <div class="row gap-4 gap-lg-0">
         <div class="col-md-7">
-          <div class="position-relative">
-            <img src="images/img1.png" alt="" class="w-100 h-300" />
-            <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
-              <div class="w-100 mt-auto p-4 bgoverlay">
-                <h3>Événements pros</h3>
-                <a href=""><img src="images/arrow3.svg" alt="" /></a>
+          <a href="#" class="d-block position-relative">
+            <div class="position-relative">
+              <img src="images/img1.png" alt="" class="w-100 h-300" />
+              <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
+                <div class="w-100 mt-auto p-4 bgoverlay">
+                  <h3>Événements pros</h3>
+                  <img src="images/arrow3.svg" alt="Flèche" />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <div class="row mt-4 gap-4 gap-md-0">
             <div class="col-md-6">
-              <div class="position-relative">
-                <img src="images/img3.png" alt="" class="w-100 h-300" />
-                <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
-                  <div class="w-100 mt-auto p-4 bgoverlay">
-                    <h3>Recherche personnalisée</h3>
-                    <a href=""><img src="images/arrow3.svg" alt="" /></a>
+              <a href="#" class="d-block position-relative">
+                <div class="position-relative">
+                  <img src="images/img3.png" alt="" class="w-100 h-300" />
+                  <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
+                    <div class="w-100 mt-auto p-4 bgoverlay">
+                      <h3>Recherche personnalisée</h3>
+                      <img src="images/arrow3.svg" alt="Flèche" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-md-6">
-              <div class="position-relative">
-                <img src="images/img4.png" alt="" class="w-100 h-300" />
-                <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
-                  <div class="w-100 mt-auto p-4 bgoverlay">
-                    <h3>Shootings photo & tournages</h3>
-                    <a href=""><img src="images/arrow3.svg" alt="" /></a>
+              <a href="#" class="d-block position-relative">
+                <div class="position-relative">
+                  <img src="images/img4.png" alt="" class="w-100 h-300" />
+                  <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
+                    <div class="w-100 mt-auto p-4 bgoverlay">
+                      <h3>Shootings photo & tournages</h3>
+                      <img src="images/arrow3.svg" alt="Flèche" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-md-5">
-          <div class="position-relative">
-            <img src="images/img2.png" alt="" class="w-100 h-630" />
-            <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
-              <div class="w-100 mt-auto p-4 bgoverlay">
-                <h3>Dépôt-vente</h3>
-                <a href=""><img src="images/arrow3.svg" alt="" /></a>
+          <a href="#" class="d-block position-relative">
+            <div class="position-relative">
+              <img src="images/img2.png" alt="" class="w-100 h-630" />
+              <div class="w-100 h-100 position-absolute top-0 start-0 d-flex justify-content-end align-items-end">
+                <div class="w-100 mt-auto p-4 bgoverlay">
+                  <h3>Dépôt-vente</h3>
+                  <img src="images/arrow3.svg" alt="Flèche" />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
   <section class="py-10 servarea">
     <div class="container">
       <div class="row">
@@ -287,6 +301,10 @@
         </div>
       </div>
     </div>
+
+    <!-- Conteneur du logo -->
+    <div class="logo-container"></div>
+
     <div class="servnew">
       <img src="images/arrow.svg" data-aos="fade-right" data-aos-duration="3000" class="toparrow position-absolute" alt="" />
       <div class="container">
@@ -297,6 +315,7 @@
       <img src="images/arrow1.svg" data-aos="fade-left" data-aos-duration="3000" class="bttomarrow position-absolute" alt="" />
     </div>
   </section>
+
   <section class="px-3 daksec overflowx">
     <div class="clubsec">
       <div class="container">
@@ -332,17 +351,29 @@
     </div>
   </section>
   <section class="logosec">
-    <marquee>
-      <img src="images/Porsche Black.svg" alt="" />
-      <img src="images/Lotus Cars New Black.svg" alt="" />
-      <img src="images/Ford_Script.svg" alt="" />
-      <img src="images/Peugeot 2021 Years.svg" alt="" />
-      <img src="images/Jaguar.svg" alt="" />
-      <img src="images/Volvo New Black.svg" alt="" />
-      <img src="images/Triumph Wordmark.svg" alt="" />
-      <img src="images/Renault New Black.svg" alt="" />
-      <img src="images/Bentley Motors.svg" alt="" />
-    </marquee>
+    <div class="logo-slider">
+      <div class="logo-track">
+        <img src="images/Porsche Black.svg" alt="Porsche" />
+        <img src="images/Lotus Cars New Black.svg" alt="Lotus" />
+        <img src="images/Ford_Script.svg" alt="Ford" />
+        <img src="images/Peugeot 2021 Years.svg" alt="Peugeot" />
+        <img src="images/Jaguar.svg" alt="Jaguar" />
+        <img src="images/Volvo New Black.svg" alt="Volvo" />
+        <img src="images/Triumph Wordmark.svg" alt="Triumph" />
+        <img src="images/Renault New Black.svg" alt="Renault" />
+        <img src="images/Bentley Motors.svg" alt="Bentley" />
+        <!-- Duplication des logos pour l'effet continu -->
+        <img src="images/Porsche Black.svg" alt="Porsche" />
+        <img src="images/Lotus Cars New Black.svg" alt="Lotus" />
+        <img src="images/Ford_Script.svg" alt="Ford" />
+        <img src="images/Peugeot 2021 Years.svg" alt="Peugeot" />
+        <img src="images/Jaguar.svg" alt="Jaguar" />
+        <img src="images/Volvo New Black.svg" alt="Volvo" />
+        <img src="images/Triumph Wordmark.svg" alt="Triumph" />
+        <img src="images/Renault New Black.svg" alt="Renault" />
+        <img src="images/Bentley Motors.svg" alt="Bentley" />
+      </div>
+    </div>
   </section>
   <section class="slidersec">
     <div class="container">
@@ -507,6 +538,14 @@
       }
      });
     </script>
+
+  <script>
+    AOS.init({
+      duration: 1000, // Durée de l'animation en millisecondes
+      easing: 'ease', // Type d'interpolation
+      once: false, // Animation jouée une seule fois
+    });
+  </script>
 
 </body>
 
