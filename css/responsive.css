@@ -409,3 +409,31 @@
         padding-bottom: 50px;
     }
 }
+
+/* Desktop (écrans lg et plus) */
+@media (min-width: 992px) {
+    .hr-left,
+    .hr-right {
+        width: 80%; /* Réduit légèrement la largeur des lignes */
+    }
+
+    .logofooter {
+        max-width: 120px; /* Taille légèrement plus grande pour desktop */
+    }
+
+    .pe-lg-3, .ps-lg-3 {
+        padding: 0; /* Supprime tout padding inutile en desktop */
+    }
+}
+
+/* Mobile (écrans inférieurs à 992px) */
+@media (max-width: 991px) {
+    .hr-left,
+    .hr-right {
+        width: 100%; /* Lignes prennent toute la largeur possible */
+    }
+
+    .logofooter {
+        max-width: 80px; /* Réduit la taille du logo en mobile */
+    }
+}

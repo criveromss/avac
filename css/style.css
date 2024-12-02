@@ -81,7 +81,7 @@ li.nav-item a{
     padding: 0px!important;
 }
 .sticky .navbar-brand img{
-    width: 50%;
+    width: 43%;
     margin: 0px!important;
     transition: all 0.4s ease-in-out 0s;
 }
@@ -298,6 +298,7 @@ li.nav-item a{
     overflow: visible; /* Permet aux pseudo-éléments de dépasser */
     min-height: 600px; /* Assurez-vous que la section est assez grande */
     margin-top: 70px;
+    padding-bottom: 160px !important;
 }
 
 /* Arc visible en bas */
@@ -328,7 +329,7 @@ li.nav-item a{
     height: 100px;
     background: #fff;
     border-radius: 50%; /* Cercle parfait */
-    background-image: url("../images/icon.svg");
+    background-image: url("../images/embleme-AVAC-noir.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%; /* Ajustez la taille de l’icône */
@@ -831,4 +832,18 @@ input[type="search"]:focus {
     to {
         transform: translateX(-50%); /* Fin au milieu pour la boucle */
     }
+}
+
+
+.hr-left,
+.hr-right {
+
+    margin: 0; /* Supprime les marges par défaut */
+    width: 90%; /* Ajuste la largeur pour qu’elle ne prenne pas tout l’espace */
+}
+
+/* Style du logo */
+.logofooter {
+    max-width: 100px; /* Taille du logo (modifiez si nécessaire) */
+    margin: 0 auto; /* Centrage vertical et horizontal */
 }
