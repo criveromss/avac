@@ -42,8 +42,8 @@
           <a class="navbar-brand mx-0 pt-3 d-none d-lg-block" href="index.html"><img class="mt-5" src="images/logo.svg"
               alt="" /></a>
           <div class="d-flex flexcust w-350 gap-4 align-items-center justify-content-end">
-            <button>Contact</button>
-            <button class="d-flex justify-content-center align-items-center gap-2"><img src="images/user.svg" alt="" />
+            <button class="club">Contact</button>
+            <button class="club d-flex justify-content-center align-items-center gap-2"><img src="images/user.svg" alt="" />
               Connexion</button>
             <a href=""><img src="images/flag.svg" alt="" /></a>
           </div>
@@ -59,7 +59,7 @@
         <h1>Louez ou achetez <span class="rotating-text">Bienvenue</br> au club</span></br> une voiture mythique</h1>
         <p>Plongez dans l’univers des voitures de légende et accédez à une collection <br> exclusive de modèles iconiques, un patrimoine rare et authentique.</p>
         <div class="d-flex justify-content-center gap-md-4 gap-2 flex-column flex-md-row">
-          <a href="collection.html" class="fill">Voir la collection</a>
+          <a  href="collection.html" class="blacky-button fill">Voir la collection</a>
           <a class="club" href="">Découvrir le club</a>
         </div>
       </div>
@@ -70,7 +70,7 @@
     </div>
   </section>
   <section>
-    <div class="w-100">
+    <div class="w-100 vihcule">
       <div class="vihcale">
         <h3>Rechercher un véhicule</h3>
         <div class="input-container">
@@ -218,7 +218,7 @@
           <div class="innersec d-flex justify-content-center align-items-center flex-column">
             <h6>+</h6>
             <h5>Votre coup de coeur</br> est peut-être ailleurs</h5>
-            <a href="collection.html">Voir toute la collection</a>
+            <a class="blacky-button" href="collection.html">Voir toute la collection</a>
           </div>
         </div>
       </div>
@@ -306,13 +306,29 @@
     <div class="logo-container"></div>
 
     <div class="servnew">
-      <img src="images/arrow.svg" data-aos="fade-right" data-aos-duration="3000" class="toparrow position-absolute" alt="" />
+      <svg data-aos="fade-right" data-aos-duration="3000" class="toparrow position-absolute"  width="854" height="242" viewBox="0 0 854 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+                id="line-path"
+                d="M-105.205 173.839C-80.065 152.163 -54.734 131.235 -25.752 115.422C47.102 75.2013 132.816 64.4583 214.929 70.0313C338.588 78.1783 457.589 118.315 581.23 128.408C645.451 133.456 780.231 135.227 815.001 71.4743C825.95 51.4913 819.785 25.9363 797.482 17.8193C779.254 10.9793 758.148 18.0123 744.289 30.9883C715.289 57.6933 715.41 102.476 737.884 133.534C753.166 155.762 776.177 171.879 797.19 189.404C813.094 202.437 828.214 216.367 843.112 230.511"
+                stroke="#DB5C1D"
+                stroke-width="30"
+        />
+      </svg>
       <div class="container">
         <div class="heading">
           Le club des passionnés de voitures mythiques, là où le passé rencontre le présent !
         </div>
       </div>
-      <img src="images/arrow1.svg" data-aos="fade-left" data-aos-duration="3000" class="bttomarrow position-absolute" alt="" />
+
+      <svg data-aos="fade-left" data-aos-duration="3000" class="bttomarrow position-absolute" width="868" height="217" viewBox="0 0 868 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+                id="line-path-2"
+                d="M11.408 9.89502C49.98 55.073 89.041 100.956 137.763 135.511C195.135 176.082 267.272 198.781 337.495 201.535C371.895 202.387 405.047 194.549 436.666 180.379C481.571 160.181 524.094 133.148 571.452 118.551C709.914 74.174 858.036 117.88 994.051 153.9C1079.32 174.701 1171.35 202.58 1257.9 174.834C1269.21 171.336 1280.36 167.261 1291.48 163.179"
+                stroke="#DB5C1D"
+                stroke-width="30"
+        />
+      </svg>
+
     </div>
   </section>
 
@@ -324,7 +340,7 @@
             <h4>La communauté</h4>
             <h3>Devenez membre du club</h3>
             <p>Rejoignez une communauté exclusive où chaque voiture légendaire raconte une histoire et chaque trajet devient une émotion inoubliable. Amicalement Vôtre, c’est l’authenticité et le partage au coeur de votre passion.</p>
-            <a href="#">Découvrir le club</a>
+            <a class="orange-button-hover" href="#">Découvrir le club</a>
             <div class="pe-5">
               <hr />
               <div class="d-flex justify-content-between">
@@ -547,7 +563,10 @@
       once: false, // Animation jouée une seule fois
     });
   </script>
-
+<script>
+  const path = document.getElementById('line-path');
+  console.log(path.getTotalLength());
+</script>
 </body>
 
 </html>

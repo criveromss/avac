@@ -201,7 +201,15 @@
 }
 @media only screen and (max-width:767px) {
 
+    .w-100.vihcule {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .container.pb-4.pt-4.newpage.d-flex.justify-content-between.align-items-end {
+        align-items: center !important;
+    }
     .pe-4 {
         padding-left: 2.5rem;
     }
@@ -262,6 +270,7 @@
         font-size: 14px;
         line-height: normal;
         width: 100%;
+        padding: 0 20px;
     }
     .herosection p br{
         display: contents;
