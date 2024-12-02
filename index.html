@@ -319,7 +319,6 @@
           Le club des passionnés de voitures mythiques, là où le passé rencontre le présent !
         </div>
       </div>
-
       <svg data-aos="fade-left" data-aos-duration="3000" class="bttomarrow position-absolute" width="868" height="217" viewBox="0 0 868 217" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
                 id="line-path-2"
@@ -328,6 +327,7 @@
                 stroke-width="30"
         />
       </svg>
+
 
     </div>
   </section>
@@ -563,10 +563,37 @@
       once: false, // Animation jouée une seule fois
     });
   </script>
-<script>
-  const path = document.getElementById('line-path');
-  console.log(path.getTotalLength());
-</script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Liste des éléments à observer
+      const paths = [
+        { id: '#line-path', activeClass: 'line-path-active' },
+        { id: '#line-path-2', activeClass: 'line-path-2-active' }
+      ];
+
+      // Crée un observateur pour gérer les animations
+      const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add(entry.target.dataset.activeClass);
+                    observer.unobserve(entry.target); // Stoppe l'observation après activation
+                  }
+                });
+              },
+              { threshold: 0.5 } // L'élément doit être à moitié visible pour activer l'animation
+      );
+
+      // Ajoute les chemins à l'observateur
+      paths.forEach((path) => {
+        const element = document.querySelector(path.id);
+        element.dataset.activeClass = path.activeClass; // Associe la classe active
+        observer.observe(element); // Ajoute l'élément à l'observateur
+      });
+    });
+
+  </script>
 </body>
 
 </html>

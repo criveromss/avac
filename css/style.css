@@ -872,27 +872,72 @@ input[type="search"]:focus {
 
 
 
-#line-path {
-    stroke-dasharray: 3000; /* Longueur totale du chemin */
-    stroke-dashoffset: 3000; /* Chemin caché */
-    animation: draw-line 4s linear forwards; /* Animation de 4 secondes */
-}
+/*#line-path {*/
+/*    stroke-dasharray: 3000; !* Longueur totale du chemin *!*/
+/*    stroke-dashoffset: 3000; !* Chemin caché *!*/
+/*    animation: draw-line 4s linear forwards; !* Animation de 4 secondes *!*/
+/*}*/
 
-@keyframes draw-line {
+/*@keyframes draw-line {*/
+/*    to {*/
+/*        stroke-dashoffset: 0; !* Chemin totalement révélé *!*/
+/*    }*/
+/*}*/
+
+/*#line-path-2 {*/
+/*    stroke-dasharray: 3000; !* Remplacez par la longueur réelle du chemin si nécessaire *!*/
+/*    stroke-dashoffset: 3000; !* Masque tout le chemin *!*/
+/*    animation: draw-line-2 4s linear forwards; !* Animation de 4 secondes *!*/
+/*}*/
+
+/*@keyframes draw-line-2 {*/
+/*    to {*/
+/*        stroke-dashoffset: 0; !* Affiche progressivement le chemin *!*/
+/*    }*/
+/*}*/
+
+
+
+
+
+/* Animation pour le deuxième chemin */
+
+
+/* Classes à ajouter dynamiquement */
+#line-path-2 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+}
+.line-path-2-active {
+    animation: draw-line-2 4s linear forwards;
+}
+@keyframes draw-line-2 {
+    from {
+        stroke-dashoffset: 3000;
+    }
     to {
-        stroke-dashoffset: 0; /* Chemin totalement révélé */
+        stroke-dashoffset: 0;
     }
 }
-
-#line-path-2 {
-    stroke-dasharray: 3000; /* Remplacez par la longueur réelle du chemin si nécessaire */
-    stroke-dashoffset: 3000; /* Masque tout le chemin */
-    animation: draw-line-2 4s linear forwards; /* Animation de 4 secondes */
+svg.bttomarrow.position-absolute.aos-init.aos-animate{
+    overflow: visible;
 }
 
-@keyframes draw-line-2 {
+
+
+#line-path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+}
+.line-path-active {
+    animation: draw-line 4s linear forwards;
+}
+@keyframes draw-line {
+    from {
+        stroke-dashoffset: 3000; /* Masque tout le chemin */
+    }
     to {
-        stroke-dashoffset: 0; /* Affiche progressivement le chemin */
+        stroke-dashoffset: 0; /* Affiche le chemin complet */
     }
 }
 
