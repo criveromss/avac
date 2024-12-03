@@ -971,3 +971,326 @@ a.a-outline.club:hover {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%231E1E21' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+
+
+.depot-vente-img {
+    background: url(../images/pexels-laura-paredis.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: right, center;
+    border-radius: 20px;
+}
+.depot-content {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 15px 30px #0000001C;
+    border-radius: 20px;
+    opacity: 1;
+    padding: 57px;
+}
+.bg-color-vente {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #F4E8D4CC 61%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.depot-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Thirsty Rough Reg';
+    color: #DB5C1D;
+}
+.depot-content h3 {
+    text-align: left;
+    font: normal normal 800 48px/56px Nunito Sans;
+    letter-spacing: -0.48px;
+    color: #1E1E21;
+}
+.depot-content p {
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: -0.16px;
+    color: #1E1E21;
+}
+.depot-content a {
+    border: 1px solid var(--unnamed-color-db5c1d);
+    border: 1px solid #DB5C1D;
+    border-radius: 6px;
+    opacity: 1;
+    color: #DB5C1D;
+    padding: 7px 14px;
+}
+.Groupe-img {
+    margin-top: -55px;
+}
+
+/*--------------product-page----------------------*/
+
+.product-page {
+    padding: 12% 0 50px;
+}
+ul#lightSlider {
+    height: auto !important;
+}
+ul#lightSlider li img {
+    width: 100%;
+    border-radius: 10px;
+}
+ul.lSPager.lSGallery {
+    overflow: hidden;
+}
+i.fa.fa-star {
+    font-family: fontawesome;
+    font-style: normal;
+    color: #DB5C1D;
+}
+.product-page .card {
+    border: solid 1px #ffffff;
+}
+.product-modal .carousel-indicators button {
+    height: 17px !important;
+    width: 17px !important;
+    background: #ffffff !important;
+    border-radius: 100px !important;
+    border-bottom: unset !important;
+    border-top: unset !important;
+}
+.button-right a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #1E1E21;
+    background: none;
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out 0s;
+    border: 1px solid #1E1E21;
+    padding: 9px 15px;
+}
+.text-right.button-right {
+    float: right;
+    margin-top: 30px;
+}
+.Son-histoire-table {
+    background: #FBF6EF;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+}
+.Son-histoire-table h3 {
+    color: #1E1E21;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 36px;
+    font: normal normal 800 36px/44px Nunito Sans;
+}
+.Son-histoire-content h3 {
+    color: #1E1E21;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 36px;
+    font: normal normal 800 36px / 44px Nunito Sans;
+}
+
+.Son-histoire-content {
+    padding: 40px 0;
+}
+.Son-histoire-content p {
+    text-align: left;
+    font: normal normal normal 16px / 22px Nunito Sans;
+    letter-spacing: -0.16px;
+    color: #1E1E21;
+}
+.Son-histoire-content a {
+    background: #1E1E21 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #ffffff;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.p-ratings {
+    color: #1E1E21;
+    font-size: 16px;
+    font: normal normal 500 16px / 33px Nunito Sans;
+}
+.product-description h2 {
+    font: normal normal 800 48px / 56px Nunito Sans;
+    letter-spacing: -0.48px;
+    color: #1E1E21;
+}
+.product-description h3 {
+    font: normal normal bold 46px / 33px Nunito Sans;
+    letter-spacing: 0px;
+    color: #DB5C1D;
+    padding:20px 0;
+}
+.product-description h3 small {
+    font: normal normal normal 20px / 33px Nunito Sans;
+    letter-spacing: 0px;
+    color: #1E1E21;
+}
+p.Porsche-content {
+    letter-spacing: -0.16px;
+    color: #1E1E21;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.product-description a {
+    background: #1E1E21 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #ffffff;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 29px;
+}
+ul.securise {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+ul.securise li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    font: normal normal normal 16px / 22px Nunito Sans;
+    letter-spacing: -0.16px;
+    color: #1E1E21;
+}
+.p-ratings p {
+    display: inline-block;
+    text-decoration: underline;
+}
+.product-description {
+    padding-left: 30px;
+}
+
+.panel-title a:after {
+    font-family:Fontawesome;
+    content:'\f077';
+    float:right;
+    font-size:10px;
+    font-weight:300;
+}
+.panel-title a.collapsed:after {
+    font-family:Fontawesome;
+    content:'\f078';
+}
+.Son-histoire-expand button.accordion-button.collapsed {
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: solid 1px #000000!important;
+}
+.Son-histoire-expand {
+    padding-bottom: 33px;
+}
+.Son-histoire-expand .accordion-button:focus {
+    z-index: 3;
+    border-color: #ffffff !important;
+    outline: 0;
+    box-shadow: unset !important;
+}
+.Son-histoire-expand .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+    border: unset !important;
+}
+.Son-histoire-expand .accordion-item {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+}
+li.breadcrumb-item {
+    font: normal normal normal 13px / 18px Nunito Sans;
+    letter-spacing: -0.13px;
+    color: #1E1E21;
+}
+li.breadcrumb-item a {
+    font: normal normal normal 13px / 18px Nunito Sans;
+    letter-spacing: -0.13px;
+    color: #1E1E21;
+}
+.forboxes-product {
+    padding-bottom: 0;
+    padding-top: 77px !important;
+}
+ol.breadcrumb {
+    padding-bottom: 20px;
+}
+.lSSlideOuter .lSPager.lSGallery img {
+    border-radius: 10px;
+}
+.position-absolute.end-0.heart {
+    font-family: fontawesome;
+    font-style: normal;
+    color: #DB5C1D;
+    font-style: normal !important;
+}
+.position-absolute.end-0.heart {
+    font-family: fontawesome;
+    font-style: normal;
+    color: #ffffff;
+    font-style: normal !important;
+    position: absolute;
+    z-index: 999;
+    background: #F4E8D4;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-style: normal;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+.heart {
+    font-family: fontawesome;
+    font-style: normal;
+    color: #ffffff;
+    font-style: normal !important;
+    position: absolute;
+    z-index: 999;
+    background: #F4E8D4;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-style: normal;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+.heart i.fa.fa-heart {
+    color: #db5c1d;
+    font-style: normal;
+}
+
+.p-ratings {
+    display: flex
+;
+    align-items: baseline;
+}
+.ratins {
+    background: transparent !important;
+    border-radius: 0px !important;
+    color: #1E1E1E !important;
+    display: inline !important;
+    text-align: justify !important;
+    text-decoration: underline;
+}

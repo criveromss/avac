@@ -201,6 +201,9 @@
 }
 @media only screen and (max-width:767px) {
 
+    .groupe{
+        margin-top: 101px;
+    }
     .w-100.vihcule {
         display: flex;
         align-items: center;
