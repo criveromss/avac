@@ -1,8 +1,40 @@
+root {
+    /* fonts */
+    --font-nunito-sans: "Nunito Sans";
+    --font-thirsty-script: "Thirsty Script";
+
+    /* font sizes */
+    --font-size-3xl: 22px;
+    --font-size-mini: 15px;
+    --font-size-mid: 17px;
+    --font-size-sm: 14px;
+    --font-size-17xl: 36px;
+    --font-size-base: 16px;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-gray-100: #1e1e21;
+    --color-gray-200: #020203;
+    --color-whitesmoke: #f2f2f2;
+    --color-chocolate: #db5c1d;
+    --color-lightgray: #d2d2d2;
+
+    /* Border radiuses */
+    --br-5xs: 8px;
+    --br-xl: 20px;
+    --br-8xs: 5px;
+}
+
+
+
+
 @font-face {
     font-family: 'Thirsty Rough Reg';
     src: url('../fonts/ThirstyRoughReg.woff2') format('woff2'),
         url('../fonts/ThirstyRoughReg.woff') format('woff');
 }
+
+
 
 body{
     font-family: "Nunito Sans", sans-serif;
@@ -1293,4 +1325,552 @@ ol.breadcrumb {
     display: inline !important;
     text-align: justify !important;
     text-decoration: underline;
+}
+
+
+
+
+
+
+/* Section principale */
+.bg-color-vente-contact {
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* Wrapper pour le contenu */
+.vente-contact-wrapper {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Écarte le contenu et l'image */
+    align-items: flex-start; /* Aligne en haut sur desktop */
+    flex-wrap: wrap; /* Permet un retour à la ligne sur mobile */
+    gap: 20px; /* Espace entre le contenu et l'image */
+    position: relative; /* Nécessaire pour le positionnement du contenu */
+}
+
+/* Contenu à gauche */
+.depot-content-contact {
+    flex: 1; /* Laisse le contenu prendre de l'espace */
+    max-width: 600px; /* Limite la largeur maximale */
+    background: #ffffff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    z-index: 1; /* Pour que le contenu soit au-dessus de l'image */
+    position: relative; /* Permet de contrôler le positionnement */
+    top: -50px; /* Remonte le contenu uniquement sur desktop */
+    margin-right: -50px; /* Permet la superposition avec l'image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Légère ombre */
+}
+
+.depot-content-contact h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f97316; /* Couleur orange */
+}
+
+.depot-content-contact h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.depot-content-contact p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.depot-content-contact a {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Image à droite */
+.depot-image {
+    flex: 1; /* Laisse l'image prendre de l'espace */
+    position: relative; /* Nécessaire pour la superposition */
+}
+
+.depot-image img {
+    max-width: 100%; /* Image responsive */
+    border-radius: 10px; /* Coins arrondis */
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Grille 12 colonnes */
+    gap: 20px;
+    align-items: start;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 191px;
+}
+
+/* Formulaire à gauche */
+.form-box {
+    grid-column: 2 / span 5; /* Décalage d'une colonne et occupe 5 colonnes */
+    background: #ffffff;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Champs du formulaire */
+form label {
+    display: block;
+    color: #1e1e21;
+    font: normal bold 17px/28px 'Nunito Sans', sans-serif;
+    margin-bottom: 9px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    height: 50px;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-style: italic;
+    font-size: 15px;
+    color: #1E1E21;
+    font-family: "Nunito Sans", sans-serif;
+    opacity: 0.4;
+    font-weight: medium;
+}
+form textarea {
+    height: 150px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+form button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/* Conteneur principal */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Grille de 12 colonnes */
+    gap: 20px;
+    align-items: start;
+    box-sizing: border-box;
+}
+
+
+/* Image à droite */
+.image-box {
+    grid-column: 8 / span 4; /* Image occupe 4 colonnes à droite */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+}
+
+
+/* Formulaire à gauche */
+.form-box {
+    grid-column: 2 / span 5; /* Décalage d'une colonne et occupe 5 colonnes */
+    background: #ffffff;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Bloc texte à droite */
+.info-box {
+    grid-column: 8 / span 4; /* Occupe 4 colonnes */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement vertical entre texte et image */
+    position: relative; /* Nécessaire pour positionner l'image en absolu */
+    z-index: 1; /* Assure que le texte est au-dessus de l'image */
+    height: 57%;
+}
+
+/* Texte des informations */
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info .icon {
+    font-size: 20px;
+    color: #f00; /* Couleur pour icônes */
+}
+
+
+
+
+
+
+
+
+.info-box {
+    grid-column: 8 / span 4; /* Bloc texte sur 4 colonnes */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement vertical entre les lignes */
+    position: relative; /* Nécessaire pour positionner l'image relative à ce bloc */
+    z-index: 1; /* Assure que le texte est au-dessus de l'image */
+}
+
+
+
+.image-box {
+    position: absolute;
+    top: calc(100% - 76px); /* Fixe l'image au bas du bloc texte */
+    left: 0; /* Alignement à gauche */
+    z-index: -1; /* L'image reste sous le texte */
+    width: 100%; /* Le conteneur occupe toute la largeur */
+    height: 360px; /* Hauteur fixe de l'image */
+    display: flex;
+    justify-content: flex-end; /* Aligne l'image à droite */
+    align-items: flex-end; /* Alignement vertical */
+}
+
+/* Image */
+.image-box img {
+    height: 360px; /* Hauteur fixe */
+    width: 60%; /* Largeur adaptable */
+    border-radius: 20px 0 0 20px; /* Coins arrondis en haut à gauche */
+}
+
+
+/* faq */
+/* Conteneur global de la FAQ */
+.faq-section {
+    padding: 60px 0; /* Espacement haut et bas */
+    background-color: #ffffff; /* Fond blanc pour la section */
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Grille de 12 colonnes */
+    column-gap: 40px; /* Espacement entre les colonnes */
+    width: 100%; /* La section prend toute la largeur disponible */
+    margin: 0 40px; /* Centrage horizontal si besoin */
+}
+
+/* Bloc de gauche */
+.faq-left {
+    grid-column: 2 / span 5; /* Décalage d'une colonne et occupe 5 colonnes */
+}
+
+.faq-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f47920; /* Couleur orange pour l'étiquette */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000; /* Noir pour le titre principal */
+    margin-bottom: 20px;
+}
+
+.faq-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666; /* Texte gris pour la description */
+}
+
+/* Bloc de droite */
+.faq-right {
+    grid-column: 8 / span 4; /* Aligne avec le bloc droit */
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dddddd; /* Ligne de séparation */
+    cursor: pointer;
+}
+
+.faq-question {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #1E1E21;
+    font-weight: bold;
+}
+
+.faq-arrow {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    transform: rotate(0deg); /* Par défaut, flèche vers le bas */
+    transition: transform 0.3s ease; /* Animation pour la rotation */
+}
+
+/* Interaction (flèche qui tourne) */
+.faq-item:hover .faq-arrow {
+    transform: rotate(90deg); /* Rotation à droite au survol */
+}
+
+
+
+/* Section globale */
+.cards-section {
+    padding: 60px 0 140px; /* Espacement haut et bas */
+    background-color: #ffffff; /* Fond blanc */
+    width: 100%; /* La section prend toute la largeur disponible */
+}
+
+/* Conteneur des cartes */
+.cards-container {
+    display: grid; /* Utilisation d'une grille */
+    grid-template-columns: repeat(12, 1fr); /* Grille de 12 colonnes */
+    gap: 20px; /* Espacement entre les colonnes */
+    width: 100%; /* La largeur totale est de 100% */
+    margin: 0 auto; /* Centrage horizontal */
+    max-width: 1200px; /* Alignement avec la section précédente */
+}
+
+/* Chaque carte */
+.card {
+    grid-column: span 4; /* Chaque carte occupe 4 colonnes */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: transparent; /* Suppression du fond gris */
+    border-radius: 20px; /* Coins arrondis */
+
+    border: none;
+    position: relative; /* Nécessaire pour positionner les éléments au-dessus de l'image */
+}
+
+/* Image des cartes */
+.card-image {
+    width: 100%;
+    height: 360px; /* Hauteur fixe */
+    max-width: 410px; /* Largeur maximale pour chaque carte */
+    background-size: cover; /* Image couvre entièrement le conteneur */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px; /* Coins arrondis */
+}
+
+/* Titre des cartes */
+.card-title {
+    position: absolute; /* Pour le placer au-dessus de l'image */
+    bottom: 32px; /* Positionné légèrement au-dessus du bord inférieur */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%); /* Correction pour centrer parfaitement */
+    color: #FFFFFF;
+    text-align: center;
+    font: normal normal bold 36px/28px Nunito Sans;
+    letter-spacing: -0.36px;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Badge pour "Bientôt disponible" */
+/* Badge pour "Bientôt disponible" */
+.card-badge {
+    position: absolute; /* Placé par rapport à la carte */
+    bottom: -30px; /* Placé à cheval en bas de l'image */
+    left: 50%; /* Centré horizontalement */
+    transform: translateX(-50%) rotate(-10deg); /* Rotation pour incliner le badge */
+    width: 164px; /* Largeur fixe */
+    height: 38px; /* Hauteur fixe */
+    background: #F4E8D4 0% 0% no-repeat padding-box; /* Fond beige */
+    border-radius: 5px; /* Coins arrondis */
+    opacity: 1; /* Opacité totale */
+    display: flex; /* Flexbox pour centrer le texte */
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+    padding: 0 10px; /* Espacement interne pour le texte */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : Ombre pour donner un effet flottant */
+    z-index: 10; /* Assure que le badge est au-dessus de tout */
+}
+
+/* Texte du badge */
+.card-badge span {
+    color: #1E1E21; /* Couleur du texte */
+    text-align: center; /* Alignement au centre */
+    font: normal normal medium 14px/33px Nunito Sans; /* Style de texte */
+    letter-spacing: -0.14px; /* Espacement des lettres */
+    opacity: 1; /* Opacité totale */
+}
+
+
+.h2 {
+    font-weight: 800;
+    color: #1E1E21;
+    font-size: 44px;
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+.h3 {
+    font-family: 'Thirsty Rough Reg';
+    color: #DB5C1D;
+    font-size: 22px;
+    line-height: 28px;
+}
+.txt {
+    font-family: "Nunito Sans", sans-serif;
+    color: #1E1E21;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: -0.16px;
+}
+input#accept {
+    width: 18px;
+    height: 18px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+/* Conteneur général */
+.Son-histoire .bis .container {
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer le conteneur */
+    padding: 40px 20px; /* Espacement interne */
+}
+
+/* Image à gauche */
+.bis .image-container {
+    background-size: cover; /* Image responsive */
+    background-position: center; /* Centrage de l'image */
+    height: 452px; /* Hauteur fixe */
+    width: 100%; /* Largeur automatique */
+    border-radius: 20px; /* Coins arrondis */
+    position: relative; /* Nécessaire pour placer le label */
+}
+
+/* Label sous l'image */
+.bis .image-label {
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    background: #f4e8d4;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e1e21;
+    transform: rotate(-5deg);
+}
+.bis .row.no-gutters.align-items-center {
+    gap: 88px;
+}
+
+.badge {
+    position: absolute;
+    top: -24px;
+    left: -25px;
+    z-index: 2;
+    height: 65px;
+    width: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 16px #00000014;
+    opacity: 1;
+    border-radius: 65px;
+    padding: 10px;
+}
+section.Son-histoire.bis {
+    margin-top: 80px;
+}
+
+section.py-10.servnous {
+    margin-top: -99px;
+}
+
+.headservnous {
+    text-align: center;
+    font-size:  48px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -0.48px;
+    color: #1E1E21;
+}
+.headservnous span {
+    text-align: center;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 800;
+    font-family: "Nunito Sans", sans-serif;
+    letter-spacing: -0.36px;
+    color: #DB5C1D;
+}
+
+.clubsec.servnous{
+    background: transparent;
+}
+.servnous a {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background: #DB5C1D;
+    border-radius: 5px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+.servnous {
+    margin-bottom: 160PX;
 }

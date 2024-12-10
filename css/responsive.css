@@ -449,3 +449,167 @@
         max-width: 80px; /* Réduit la taille du logo en mobile */
     }
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .vente-contact-wrapper {
+        flex-direction: column; /* Passe en colonne pour les petits écrans */
+    }
+
+    .depot-content,
+    .depot-image {
+        flex: unset; /* Désactive la répartition d'espace */
+        max-width: 100%; /* Prend toute la largeur */
+    }
+
+    .depot-content {
+        margin-bottom: 20px; /* Ajoute un espacement entre le texte et l'image */
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+    }
+
+    .form-box,
+    .image-box {
+        grid-column: auto;
+    }
+
+    .faq-container {
+        text-align: center;
+    }
+}@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    }
+
+    .form-box,
+    .info-box {
+        grid-column: auto;
+    }
+
+    .image-box img {
+        border-radius: 20px; /* Coins arrondis sur mobile */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .image-box {
+        display: none; /* Cache le conteneur et l'image */
+    }
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(6, 1fr); /* Réduit la grille à 6 colonnes */
+    }
+
+    .card {
+        grid-column: span 6; /* Chaque carte occupe toute la largeur (2 par ligne) */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr); /* Réduit la grille à 4 colonnes */
+    }
+
+    .card {
+        grid-column: span 4; /* Une seule carte par ligne */
+    }
+
+    .card-image {
+        height: 300px; /* Hauteur réduite pour les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-image {
+        height: 250px; /* Hauteur encore plus petite pour les très petits écrans */
+    }
+
+    .card-title {
+        font-size: 16px; /* Taille du texte réduite */
+    }
+
+    .card-badge {
+        font-size: 10px; /* Badge plus petit */
+    }
+}
+@media (max-width: 768px) {
+    .faq-container {
+        display: flex; /* Flexbox pour réorganisation */
+        flex-direction: column; /* Empile les éléments verticalement */
+        text-align: center; /* Centre le contenu */
+        gap: 20px; /* Ajoute de l'espace entre les éléments */
+        width: auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .card {
+        display: flex
+    ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 992px) { /* Ciblage des écrans desktop */
+    .col-md-12 > a {
+        margin-bottom: 25px; /* Ajuste la valeur selon le besoin */
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Son-histoire .bis .row {
+        flex-direction: column; /* Empile les éléments */
+    }
+
+    .bis.image-container,
+    .bis.text-container {
+        width: 100%; /* Largeur pleine */
+        margin-bottom: 20px; /* Espacement entre les blocs */
+    }
+
+    .bis.text-container {
+        text-align: center; /* Centrer le texte */
+        padding: 0 20px; /* Réduire les marges internes */
+    }
+
+    .bis.image-label {
+        left: 50%; /* Centrer le label */
+        transform: translateX(-50%) rotate(-5deg);
+    }
+
+    section.py-10.servnous {
+        margin-top: 0;
+    }
+    .servnous img {
+        margin-top: 30px;
+    }
+
+    .headservnous {
+        font-size: 28px;
+    }
+
+    .headservnous span {
+        font-size: 18px;
+    }
+    .servnous .servnew .toparrow{
+            width: 420px !important;
+    }
+}
