@@ -1874,3 +1874,198 @@ section.py-10.servnous {
 .servnous {
     margin-bottom: 160PX;
 }
+
+
+/* comment */
+.community-section {
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #F4E8D4CC 61%, #FFFFFF 100%);
+    padding: 50px 0;
+}
+
+
+.social-icons img {
+    margin-right: 15px;
+}
+
+.video-thumbnails {
+    display: flex;
+    gap: 20px;
+}
+
+.video-item img {
+    width: 291px;
+    height: 466px;
+    background: #1E1E21;
+    border-radius: 20px;
+    mix-blend-mode: darken;
+    opacity: 0.25;
+}
+
+.testimonial {
+    width: 100%;
+    max-width: 477px;
+    height: 263px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.testimonial p {
+    font: normal normal normal 16px/22px 'Nunito Sans', sans-serif;
+    color: #1E1E21;
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author h4 {
+    font: bold 16px/22px 'Nunito Sans', sans-serif;
+    color: #1E1E21;
+    margin-bottom: 5px;
+}
+
+.author span {
+    font: normal 14px/18px 'Nunito Sans', sans-serif;
+    color: #999;
+}
+
+.member-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #1E1E21;
+    color: #FFFFFF;
+    font: bold 14px 'Nunito Sans', sans-serif;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    margin-right: -160px;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: calc(100% + 20%); /* Dépassement sur les bords pour un effet dynamique */
+    margin-left: -10%; /* Compense le débordement pour commencer au bon endroit */
+}
+
+
+
+
+
+
+/* Images du slider */
+.slider-item {
+    flex: 0 0 auto; /* Fixe la largeur des items */
+    width: 291px;
+    height: 466px;
+    margin-right: 15px;
+    border-radius: 20px;
+    overflow: hidden; /* Évite les débordements */
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Témoignages */
+.testimonial {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 140px;
+}
+
+.testimonial .author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.testimonial .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.member-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 333px;
+    height: 72px;
+    background: #1E1E21;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    opacity: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.15px;
+    color: #E57238;
+    text-align: center;
+    bottom: -56px;
+    right: -17px;
+    overflow: hidden;
+    transform: rotate(-5deg);
+}
+
+.member-badge::before,
+.member-badge::after {
+    content: "";
+    position: absolute;
+    width: 30px; /* Largeur de l'arc */
+    height: 30px; /* Hauteur de l'arc */
+    background: #ece7df; /* Couleur de fond du conteneur (ou transparent si nécessaire) */
+    border-radius: 50%; /* Cercle parfait */
+    z-index: 1; /* Derrière le texte */
+}
+
+.member-badge::before {
+    left: -18px; /* Place l'arc à gauche */
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste verticalement */
+}
+
+.member-badge::after {
+    right: -18px; /* Place l'arc à droite */
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste verticalement */
+}
+
+
+section.py-10.servnous .servnew .toparrow {
+    width: 726px;
+}
+section.py-10.servnous .servnew .barrow {
+   right: 0px;
+}
+.social-icons {
+    margin-bottom: 48px;
+}

@@ -613,3 +613,25 @@
             width: 420px !important;
     }
 }
+@media (max-width: 768px) {
+    .slider-container {
+        margin-right: 0; /* Pas de marge pour les petits écrans */
+    }
+
+    .slider-track {
+        gap: 5px; /* Réduit l'espace entre les images */
+    }
+
+    .slider-item {
+        width: 200px; /* Taille adaptée aux smartphones */
+        height: 300px;
+    }
+}
+
+/* Responsive: pour les très petits écrans */
+@media (max-width: 480px) {
+    .slider-item {
+        width: 150px;
+        height: 250px;
+    }
+}
