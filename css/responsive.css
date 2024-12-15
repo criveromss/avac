@@ -635,3 +635,112 @@
         height: 250px;
     }
 }
+/* Responsive pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column; /* Passe les éléments à la verticale */
+        align-items: flex-start; /* Aligne les éléments à gauche */
+        gap: 5px; /* Réduit l'espacement */
+    }
+
+    .main-title {
+        font-size: 36px; /* Réduit la taille du titre */
+        line-height: 44px;
+    }
+
+    .label-annuel {
+        font-size: 12px; /* Réduit la taille du label */
+        padding: 4px 8px;
+    }
+    .pricing-box {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .advantages-box {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+/* Responsive pour les écrans de moins de 480px */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 28px; /* Titre encore plus petit */
+        line-height: 36px;
+    }
+
+    .label-annuel {
+        font-size: 10px; /* Label plus petit */
+        padding: 3px 6px;
+    }
+    .pricing-box {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .advantages-box {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+
+/* --- Masquer et afficher selon les appareils --- */
+@media (min-width: 769px) {
+    .frise-container {
+        display: flex; /* Affiche la frise uniquement sur desktop */
+    }
+    .mobile-steps {
+        display: none; /* Cache la vue mobile sur desktop */
+    }
+}
+
+@media (max-width: 768px) {
+    .frise-container {
+        display: none; /* Cache la frise sur mobile */
+    }
+    .mobile-steps {
+        display: flex; /* Affiche la vue mobile */
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Espacement entre les étapes */
+        margin: 20px 0; /* Espacement général */
+    }
+
+    .mobile-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobile-step .step-icon {
+        background-color: #DB5C1D;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .mobile-step h3,
+    .mobile-step p {
+        margin: 0;
+        color: #1E1E21;
+    }
+
+    .mobile-step p span {
+        color: #DB5C1D;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .condition-box.\32 {
+        position: absolute;
+        top: 335px;
+        left: 320px;
+        z-index: 2;
+    }
+}
