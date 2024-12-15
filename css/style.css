@@ -2601,7 +2601,7 @@ p span {
     border-radius: 20px;
     max-width: 1100px;
     height: auto;
-    overflow: hidden;
+
     margin: 0 auto; /* Centrage horizontal pour assurer la position */
 }
 
@@ -2637,6 +2637,7 @@ p span {
     justify-content: center;
     z-index: 2;
     background-color: white;
+    position: relative;
 }
 
 .section-title {
@@ -2866,4 +2867,23 @@ p span {
     line-height: 1.6;
     color: #4A4A4A;
     margin-bottom: 15px;
+}
+
+
+
+
+
+/* Texte positionné absolument */
+.rotating-text.adhesion-bien {
+    position: absolute; /* Position absolue par rapport au parent */
+    top: 20px; /* Décalage vertical */
+    left: -53px; /* Décalage horizontal */
+    font-size: 28px; /* Taille du texte */
+    font-family: "Thirsty Script", cursive; /* Police personnalisée */
+    letter-spacing: -0.28px;
+    color: #DB5C1D; /* Couleur */
+    line-height: 1.2;
+    white-space: nowrap; /* Empêche les retours à la ligne */
+    z-index: 10; /* S'assure que le texte est au-dessus de l'image */
+    opacity: 1; /* Pleine opacité */
 }
