@@ -135,7 +135,7 @@
       </div>
     </div>
 
-      <div class="image-box">
+      <div class="image-box" data-aos="fade-right" data-aos-delay="400">
         <img src="./images/pexelsmatreding11213241@2x.png" alt="Image de voiture" />
       </div>
 
@@ -157,23 +157,23 @@
     <!-- Bloc de droite -->
     <div class="faq-right">
       <ul class="faq-list">
-        <li class="faq-item">
+        <li class="faq-item" data-aos="fade-right" data-aos-delay="200">
           <span class="faq-question">Ceci est un exemple de question pour la FAQ ?</span>
           <span class="faq-arrow">↓</span>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-aos="fade-right" data-aos-delay="300">
           <span class="faq-question">Ceci est un exemple de question pour la FAQ ?</span>
           <span class="faq-arrow">↓</span>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-aos="fade-right" data-aos-delay="400">
           <span class="faq-question">Ceci est un exemple de question pour la FAQ ?</span>
           <span class="faq-arrow">↓</span>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-aos="fade-right" data-aos-delay="500">
           <span class="faq-question">Ceci est un exemple de question pour la FAQ ?</span>
           <span class="faq-arrow">↓</span>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-aos="fade-right" data-aos-delay="600">
           <span class="faq-question">Ceci est un exemple de question pour la FAQ ?</span>
           <span class="faq-arrow">↓</span>
         </li>
@@ -272,6 +272,9 @@
     </div>
   </div>
 </footer>
+
+
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -279,41 +282,6 @@
     AOS.init();
   </script>
   <script type="text/javascript" src="js/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function () {
-      $('.videoslider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerPadding: '30px 0',
-        arrows: false,
-        centerMode: true,
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerPadding: '0px',
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerPadding: '0px',
-            }
-          }
-        ]
-      });
-      window.addEventListener("load", function() {
-          document.querySelector(".rotating-text").classList.add("start-animation");
-      });
-    });
-
-  </script>
   <script>
     //sticky Header
      $(window).scroll(function() {

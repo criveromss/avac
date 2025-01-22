@@ -660,13 +660,9 @@ footer hr{
 .heroDiv {
     height: 580px;
     position: relative;
-    background: transparent linear-gradient(
-            180deg,
-            #FFFFFF 0%, /* Dégradé commençant par du blanc */
-            #F4E8D4CC 61%, /* Couleur intermédiaire avec transparence */
-            #FFFFFF 100% /* Retour au blanc */
-    ) 0% 0% no-repeat padding-box;
-    overflow: hidden; /* Empêche les débordements potentiels */
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, /* Dégradé commençant par du blanc */ #F4E8D4CC 89%, /* Couleur intermédiaire avec transparence */ #FFFFFF 100% /* Retour au blanc */) 0% 0% no-repeat padding-box;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .heroDiv::before {
@@ -1557,7 +1553,7 @@ form button {
 
 .image-box {
     position: absolute;
-    top: calc(100% - 76px); /* Fixe l'image au bas du bloc texte */
+    top: calc(100% - -230px); /* Fixe l'image au bas du bloc texte */
     left: 0; /* Alignement à gauche */
     z-index: -1; /* L'image reste sous le texte */
     width: 100%; /* Le conteneur occupe toute la largeur */
@@ -1715,6 +1711,7 @@ form button {
     opacity: 1;
     margin: 0;
     padding: 0;
+    width: max-content;
 }
 
 /* Badge pour "Bientôt disponible" */
@@ -2082,7 +2079,7 @@ section.py-10.servnous .servnew .bttomarrow {
 /* Bloc Tarif */
 .pricing-box {
     width: 642px;
-    height: 470px;
+    height: 350px;
     background: #FFFFFF;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.11);
     border-radius: 20px;
@@ -2098,11 +2095,11 @@ section.py-10.servnous .servnew .bttomarrow {
 
 .badge {
     display: inline-block;
-    font: normal normal 14px/18px Nunito Sans;
+    font: normal normal 14px / 18px Nunito Sans;
     color: #1E1E21;
-    background: #F4E8D4;
-    padding: 4px 10px;
-    border-radius: 12px;
+    background: white;
+    padding: 12px 10px;
+    border-radius: 42px;
     margin-left: 10px;
 }
 
@@ -2822,7 +2819,7 @@ p span {
 }
 
 /* Bloc gauche - Image */
-.image-box {
+.image-box .two {
     width: 642px;
     height: 451px;
     background: #FBF6EF; /* Couleur demandée */
@@ -2886,4 +2883,274 @@ p span {
     white-space: nowrap; /* Empêche les retours à la ligne */
     z-index: 10; /* S'assure que le texte est au-dessus de l'image */
     opacity: 1; /* Pleine opacité */
+}
+
+
+
+
+.custom-form-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px #0000001C;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    height: 998px;
+    box-sizing: border-box; /* Inclure les paddings dans les dimensions */
+    margin-top: 30px;
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-form-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.custom-form-radio-label {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #1E1E21;
+    letter-spacing: -0.17px;
+    height: 23px;
+}
+
+.custom-form-radio {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    background: #FFFFFF;
+    border: 1px solid #1E1E21;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-form-radio:checked {
+    border-color: #DB5C1D;
+}
+
+.custom-form-radio:checked::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #DB5C1D;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.custom-form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.custom-form-row .custom-form-field {
+    flex: 1;
+}
+
+.custom-form-label {
+    color: #1E1E21;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -0.17px;
+}
+
+.custom-form-input {
+    width: 100%;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.custom-form-upload-button {
+    width: 248px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #1E1E21;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.custom-form-submit-button {
+    width: 100%;
+    height: 50px;
+    background: #FF5722;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-form-submit-button:hover {
+    background: #E64A19;
+}
+
+.custom-form-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #1E1E21;
+}
+
+
+.custom-form-upload-button {
+    width: 248px;
+    height: 50px;
+    background: #FFFFFF; /* Fond blanc */
+    border: 1px solid #1E1E21; /* Bordure noire */
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Texte aligné à gauche */
+    padding: 0 15px; /* Espacement intérieur pour aligner le texte */
+    font: normal normal 600 17px/50px 'Nunito Sans', sans-serif; /* Police et hauteur de ligne */
+    letter-spacing: -0.17px; /* Espacement des lettres */
+    color: #1E1E21; /* Couleur du texte */
+    opacity: 1;
+    box-sizing: border-box; /* Inclure les paddings dans les dimensions */
+}
+
+.custom-form-upload-button:hover {
+    background: #F2F2F2; /* Ajouter un effet hover */
+}
+
+@media (max-width: 768px) {
+    .custom-form-row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.photo-container {
+    background: #FFFFFF 0% 0% no-repeat padding-box; /* Fond blanc */
+    opacity: 1;
+    box-sizing: border-box; /* Assure que tout est inclus dans les dimensions */
+    margin: 0 auto; /* Centrer l'élément horizontalement */
+    margin-bottom: 100px;
+}
+
+.photo-container img {
+    border-radius: 20px;
+}
+
+
+.split-section.two img {
+    border-radius: 20px;
+
+}
+
+.col-img-down {
+    display: flex
+;
+    flex-direction: column;
+    gap: 136px;
+}
+
+
+
+section.community-section.innersec {
+    height: 556px;
+    margin-bottom: 55px;
+    position: relative;
+    margin-top: 70px;
+}
+
+
+
+
+.absolute-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 15px 30px #0000001C;
+    border-radius: 15px;
+    opacity: 1;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 18px;
+}
+
+.absolute-box img {
+    width: 26px;
+    height: 26px;
+}
+
+.absolute-box.left-box {
+    position: absolute;
+    top: -64px;
+    left: 65px;
+}
+
+.absolute-box.right-box {
+    position: absolute;
+    right: 90px;
+    top: -44px;
+}
+
+.absolute-box.bottom-box {
+
+    left: 302px;
+    position: absolute;
+    bottom: 106px;
+}
+p.absolute-text {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-box button.cta-button {
+    width: 230px;
+}
+
+
+
+.product-description {
+    text-align: left;
+}
+ul.securise {
+    display: flex;
+    gap: 50px;
+}
+
+.img-payment {
+    margin-right: 6px;
+}
+
+
+a.blacky-button {
+    width: auto;
+    padding: 20px;
+}
+
+
+.arrow-down {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease; /* Animation lisse si nécessaire */
 }
